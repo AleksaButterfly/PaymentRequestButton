@@ -1,0 +1,38 @@
+.root {
+}
+
+.formDivider {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.formDividerText {
+  /* Layout */
+  display: flex;
+  align-items: center;
+
+  /* Font */
+  white-space: nowrap;
+  text-transform: uppercase;
+
+  &:after,
+  &:before {
+    content: '';
+    display: flex;
+
+    /* Size */
+    width: 100%;
+    height: 1px;
+
+    /* Style */
+    background-color: var(--matterColorNegative);
+    margin-right: 12px;
+  }
+
+  &:after {
+    margin-left: 24px;
+  }
+  &:before {
+    margin-right: 24px;
+  }
+}
